@@ -1,0 +1,477 @@
+/* reset all styles*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*styling fonts*/
+@font-face {
+    font-family: 'Inter';
+    src: url('assets/fonts/static/Inter-Bold.ttf')  format('truetype');
+    font-weight: 600;
+    font-style: bold;
+  }
+
+  @font-face {
+    font-family: 'Inter';
+    src: url('assets/fonts/static/Inter-ExtraBold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: ExtraBold;
+  }
+
+  @font-face {
+    font-family: 'Inter';
+    src: url('assets/fonts/static/Inter-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+html {
+    box-sizing: border-box;
+    font-family: 'Inter', 'Times', Arial, sans-serif;
+    font-style: normal;
+    padding: 5% 10%;
+    width: 100%;
+    min-height: 100vh;
+    font-size: 20px;
+}
+
+/*styling nav bar*/
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+.nav-button{
+    display: none;
+}
+
+.logo{
+    width: 64px;
+    height: 40px;
+}
+
+a{
+    text-decoration: none;
+    color: #5e607a;
+    text-align: center;
+}
+
+.subcontent li{
+    display: inline;
+    line-height: 26px;
+    padding-right: 42px ;
+    font-weight: 400;
+    text-align: center;
+    
+}
+
+ul li:last-child{
+    padding-right: 0;
+}
+
+a:hover{
+    color: #f15d51;
+}
+
+/*styling top page*/
+    /*styling main*/
+#top-page{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+
+}
+.main-container{
+    width: 85%;
+    padding-right: 2%;
+}
+.desktop {
+    width: 100%;
+    height: 50%;
+}
+
+.mobile {
+    display: none;
+}
+
+
+.subtext{
+    display: flex;
+    flex-direction: row;
+    padding-right: 1%;
+    padding-top: 3%;
+}
+#big-title{
+    width: 50%;
+    height: 100%;
+    font-size: 56px;
+    line-height: 100%;
+    color: #00001a;
+    font-weight: 800;
+    margin-top: 5%;
+}
+.side-text{
+    height: 100%;
+    width: 50%;
+    line-height: 26px;
+    color: #5e607a;
+    font-weight: 400;
+
+}
+
+button{
+    width: 60%;
+    height: 20%;
+    margin-top: 5%;
+    color: white;
+    background-color: #F15D51;
+    text-transform: uppercase;
+    border: 0;
+    letter-spacing: 4px;
+    padding: 4% 6%;
+    font-weight: 600;
+
+}
+
+button:hover{
+    background-color: #00001A;
+    cursor: pointer;
+}
+    /*styling side*/
+.side-content{
+    width: 40%;
+    height: 100%;
+    background-color: #00001A ;
+    color: #FFFDFA;
+    padding: 2% 2%;
+    
+}
+
+aside h1 {
+    font-size: 40px;
+    line-height: 40px;
+    color: #e9aa52;
+    font-weight: bold;
+    margin-bottom: 5%;
+}
+
+aside h2 {
+    font-size: 30px;
+    line-height: 24px;
+    color: #fffdfa;
+    font-weight: 800;
+}
+
+aside p{
+    height: 52px;
+    line-height: 26px;
+    color: #c5c6ce;
+    font-weight: 400;
+    padding-top: 5%;
+
+}
+
+.description{
+    border-bottom: 1px solid #5E607A ;
+    margin-bottom: 5%;
+    padding-bottom: 5%;
+}
+
+.description:last-child{
+    border-bottom: none;
+}
+
+.description:hover{
+    border-bottom: 1px solid #1A80FF;
+    cursor: pointer;
+}
+
+aside h2:hover{
+    color: #e9aa52;
+}
+/*styling bottom page*/
+#bottom-page{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+    height: 25%;
+}
+.bottom-content{
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    margin-left: 3%;
+}
+
+.bottom-content:first-child{
+    
+    margin-left: 0;
+}
+
+.bottom-image img{
+    height: 70%;
+    
+}
+
+.bottom-side-text{
+    height: 100%;
+    margin-left: 5%;
+    width: 50%;
+    overflow-wrap: break-word;
+}
+
+
+
+#bottom-page h2{
+    font-size: 42px;
+    line-height: 32px;
+    color: #c5c6ce;
+    font-weight: bold;
+    margin-top: 3%;
+}
+
+#bottom-page h3{
+    font-size: 28px;
+    line-height: 24px;
+    color: #00001a;
+    font-weight: 800;
+    margin-top: 5%;
+}
+
+#bottom-page p{
+    width: 226px;
+    height: 52px;
+    line-height: 26px;
+    color: #5e607a;
+    font-weight: 400;
+    margin-top: 5%;
+   
+}
+
+#bottom-page h3:hover{
+   color:  #F15D51;
+   cursor: pointer;
+
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+/*Styling mobile*/
+
+@media screen and (max-width:800px){
+    body{
+        display: flex;
+        flex-direction: column; 
+
+    }
+
+    nav{
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        
+        
+    }
+
+    /*subnav*/
+
+    .mobile-nav{
+        float: left;
+       overflow: hidden;
+    }
+
+    .subcontent {
+        display: none;
+        position: absolute;
+        background-color: white;
+        z-index: 1;
+        right:10px;
+        width: 50%;
+        height: 100%;
+   
+        
+        
+    }
+    /*toggle the subnav*/
+    .mobile-nav img:nth-child(2){
+        display:none;
+    }
+
+    .mobile-nav:hover img:nth-child(1){
+        display:none;
+    }
+
+    .mobile-nav:hover img:nth-child(2){
+        display:block;
+    }
+    ul li a{
+     display: flex;
+     flex-direction: column;
+     margin-top:5%;
+     text-align: left;
+     padding: 5% 10%;
+
+    }
+/*toggle end*/
+    
+    ul li:last-child{
+        padding:5%;
+    }
+    .subcontent a:hover{
+        background-color: black;
+        color:#F15D51;
+    }
+
+    .mobile-nav:hover{
+        cursor: pointer;
+    }
+
+    .mobile-nav:hover .subcontent{
+        
+        display: block;
+    }
+/*subnav end*/
+
+    .logo{
+        width: 64px;
+        height: 40px;
+    }
+    .nav-button{
+        display: block;
+
+    }
+  
+    .mobile-nav img{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        align-self: flex-end;
+    }
+/*top page*/
+    #top-page{
+        display: flex;
+        flex-direction: column;
+        margin-top: 5%;
+    
+    }
+
+    .main-container{
+        width: 100%;
+        height: 100%;
+    }
+
+    .desktop{
+       display: none;
+    }
+    .mobile{
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    .subtext{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #big-title{
+        width: 100%;
+       
+        margin-top: 5%;
+        padding-top: 10%;
+    }
+
+    .side-text{
+        height: 100%;
+        width: 100%;
+        margin-top: 5%;
+        line-height: 35px;
+    
+    }
+
+    button{
+        width: 40%;
+        height: 20%;
+        margin-bottom: 15%;
+    }
+
+    .side-content{
+        width: 90%;
+        height: 100%;
+        padding: 5% 5%;
+        
+    }
+/*bottom page*/
+    #bottom-page{
+        display: flex;
+        flex-direction: column;
+        margin-top: 10%;
+    }
+
+    .bottom-content{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin-left: 0;
+        
+    }
+
+    .bottom-side-text{
+        height: 100%;
+        margin-left:0;
+        width: 100%;
+        overflow-wrap: break-word;
+    }
+
+    #bottom-page h3, h2, p{
+        margin-top: 5%;
+        
+    }
+    #bottom-page p{
+        line-height: 25px;
+    }
+    
+    
+}
